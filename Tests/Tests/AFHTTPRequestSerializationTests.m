@@ -69,7 +69,7 @@
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://example.com"]];
     request.HTTPMethod = @"POST";
 
-    NSURLRequest *serializedRequest = [self.requestSerializer requestBySerializingRequest:request withParameters:@{@"key":@"value"} error:nil];
+    NSURLRequest *serializedRequest = [self.requestSerializer requestBySerializingRequest:request withParameters:@{@"key":@"head👴🏻👮🏽tail"} error:nil];
     NSString *contentType = serializedRequest.allHTTPHeaderFields[@"Content-Type"];
 
     XCTAssertNotNil(contentType);
